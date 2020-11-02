@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class HistorialSensoresActivity extends AppCompatActivity {
 
     private SensoresAdapter adapter;
-    private String tipoSensor;
+    private String tipoSensor,tokenUsuario;
     private TextView sensorTextView;
 
     @Override
@@ -23,6 +23,7 @@ public class HistorialSensoresActivity extends AppCompatActivity {
 
         Intent i = getIntent();
         tipoSensor = i.getStringExtra("tipoSensor");
+        tokenUsuario = i.getStringExtra("tokenUsuario");
 
         sensorTextView = findViewById(R.id.sensorText);
         sensorTextView.setText(tipoSensor);
@@ -41,7 +42,8 @@ public class HistorialSensoresActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        startActivity(new Intent(HistorialSensoresActivity.this,SensoresActivity.class));
-        finish();
+        Intent i = new Intent(HistorialSensoresActivity.this, SensoresActivity.class);
+        i.putExtra("tokenUsuario", tokenUsuario);
+        startActivity(i);
     }
 }

@@ -71,6 +71,7 @@ public class SensoresActivity extends Activity implements SensorEventListener {
             public void onClick(View view) {
                 Intent i = new Intent(SensoresActivity.this, HistorialSensoresActivity.class);
                 i.putExtra("tipoSensor", TIPO_ACELEROMETRO);
+                i.putExtra("tokenUsuario", tokenSensores);
                 startActivity(i);
                 finish();
             }
@@ -81,6 +82,7 @@ public class SensoresActivity extends Activity implements SensorEventListener {
             public void onClick(View view) {
                 Intent i = new Intent(SensoresActivity.this, HistorialSensoresActivity.class);
                 i.putExtra("tipoSensor", TIPO_PROXIMIDAD);
+                i.putExtra("tokenUsuario", tokenSensores);
                 startActivity(i);
                 finish();
             }
@@ -91,6 +93,7 @@ public class SensoresActivity extends Activity implements SensorEventListener {
             public void onClick(View view) {
                 Intent i = new Intent(SensoresActivity.this, HistorialSensoresActivity.class);
                 i.putExtra("tipoSensor", TIPO_LUMINOSIDAD);
+                i.putExtra("tokenUsuario", tokenSensores);
                 startActivity(i);
                 finish();
             }
@@ -101,6 +104,7 @@ public class SensoresActivity extends Activity implements SensorEventListener {
             public void onClick(View view) {
                 Intent i = new Intent(SensoresActivity.this, HistorialSensoresActivity.class);
                 i.putExtra("tipoSensor", TIPO_MAGNETROMETRO);
+                i.putExtra("tokenUsuario", tokenSensores);
                 startActivity(i);
                 finish();
             }
