@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EA2 Alex Rivas Svadeba</string>
+    <string name="retrofit_server">http://so-unlam.net.ar/api/</string>
+</resources>

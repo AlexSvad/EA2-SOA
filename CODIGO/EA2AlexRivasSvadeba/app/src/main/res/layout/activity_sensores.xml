@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ea2.activities.SensoresActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/uni"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#d8000000"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp" >
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Sensores"
+                android:textSize="25sp"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/detecta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/acelerometro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#fff"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@color/green_uni"
+                android:textColor="@android:color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/white"
+                android:id="@+id/btn_aceler"
+                android:text="MEDICIONES DEL ACELERÓMETRO"/>
+            <TextView
+                android:id="@+id/proximity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:textSize="22sp"
+                android:textColor="#fff"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@color/green_uni"
+                android:textColor="@android:color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/white"
+                android:id="@+id/btn_proximidad"
+                android:text="MEDICIONES DE PROXIMIDAD"/>
+            <TextView
+                android:id="@+id/luminosidad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:textSize="22sp"
+                android:textColor="#fff"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@color/green_uni"
+                android:textColor="@android:color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/white"
+                android:id="@+id/btn_lumin"
+                android:text="MEDICIONES DE LA LUMINOSIDAD"/>
+            <TextView
+                android:id="@+id/magnetic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:textSize="22sp"
+                android:textColor="#fff"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@color/green_uni"
+                android:textColor="@android:color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:shadowColor="@android:color/white"
+                android:id="@+id/btn_magnet"
+                android:text="MEDICIONES DEL MAGNETRÓMETRO"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Los resultados se guardan en tu usuario en el servidor so-unlam"
+                android:textSize="22sp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
